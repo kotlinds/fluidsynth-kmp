@@ -11,3 +11,4 @@ set_target_properties(fluidsynth PROPERTIES
 find_library(log-lib log)
 
 target_link_libraries(fluidsynth_jni fluidsynth ${log-lib})
+target_link_options(fluidsynth_jni PRIVATE "-Wl,-z,max-page-size=16384")

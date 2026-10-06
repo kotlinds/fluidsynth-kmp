@@ -59,6 +59,7 @@ val iosSimulatorHeadersDir = xcframeworkBase?.resolve("ios-arm64_x86_64-simulato
 
 android {
     namespace = "dev.kotlinds.fluidsynthkmp"
+    ndkVersion = "30.0.16248370"
     compileSdk = 35
     defaultConfig {
         minSdk = 24
